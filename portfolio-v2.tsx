@@ -290,7 +290,7 @@ export default function PortfolioV2() {
 
                 <div className="mt-12 flex gap-4">
                   <a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/abdulhashim786"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
@@ -298,7 +298,7 @@ export default function PortfolioV2() {
                     <Github size={20} />
                   </a>
                   <a
-                    href="https://linkedin.com/in/yourusername"
+                    href="https://www.linkedin.com/in/abdul-hashim-104286219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
@@ -590,13 +590,13 @@ export default function PortfolioV2() {
                         <div className="p-2 rounded-full bg-white/20">
                           <Github size={20} />
                         </div>
-                        <span>github.com/yourusername</span>
+                        <span>https://github.com/abdulhashim786</span>
                       </div>
                       <div className="flex items-center gap-4">
                         <div className="p-2 rounded-full bg-white/20">
                           <Linkedin size={20} />
                         </div>
-                        <span>linkedin.com/in/yourusername</span>
+                        <span>https://www.linkedin.com/in/abdul-hashim-104286219</span>
                       </div>
                       <div className="flex items-center gap-4">
                         <div className="p-2 rounded-full bg-white/20">
@@ -706,7 +706,7 @@ export default function PortfolioV2() {
 
             <div className="flex gap-4 mt-4 md:mt-0">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/abdulhashim786"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
@@ -714,7 +714,7 @@ export default function PortfolioV2() {
                 <Github size={18} />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/abdul-hashim-104286219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"

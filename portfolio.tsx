@@ -178,7 +178,7 @@ export default function Portfolio() {
             </motion.div>
 
             <div className="mt-12 flex gap-4">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/abdulhashim786" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Github size={24} />
               </a>
               <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
@@ -341,14 +341,14 @@ export default function Portfolio() {
                   </div>
                   <div className="flex items-center gap-3">
                     <Github className="text-blue-400" />
-                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                      github.com/yourusername
+                    <a href="https://github.com/abdulhashim786" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                    https://github.com/abdulhashim786
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
                     <Linkedin className="text-blue-400" />
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                      linkedin.com/in/yourusername
+                    <a href="https://www.linkedin.com/in/abdul-hashim-104286219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                    https://www.linkedin.com/in/abdul-hashim-104286219
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
