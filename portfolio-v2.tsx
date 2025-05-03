@@ -112,19 +112,41 @@ export default function PortfolioV2() {
         "Angular Material",
         "SCSS",
       ],
-      image: "/placeholder.svg?height=200&width=350",
-      github: "#",
-      demo: "#",
+      image: "/unnamed.webp?height=100&width=350",
+      github: "https://github.com/abdulhashim786",
+      demo: "https://myshopyglam.com/",
     },
     {
       title: "Shopyglam (Next.js)",
       description:
         "The same social e-commerce platform rebuilt with Next.js for improved performance and SEO.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Ionic"],
-      image: "/placeholder.svg?height=200&width=350",
-      github: "#",
-      demo: "#",
+      image: "/unnamed (1).webp?height=100&width=350",
+      github: "https://github.com/abdulhashim786",
+      demo: "https://myshopyglam.com/",
     },
+    {
+      title: "WhatsApp Sales Agent",
+      description:
+        "AI-powered WhatsApp solution that automates replies, qualifies leads, and closes sales. Transforms WhatsApp Business into a complete sales machine with features like auto lead filtering, smart engagement, and real-time agent routing.",
+      technologies: [
+        "Node.js",
+        "WhatsApp Business API",
+        "AI/NLP",
+        "Angular",
+        "MongoDB"
+      ],
+      image: "/image.png?height=200&width=350",
+      github: "https://github.com/abdulhashim786",
+      demo: "https://ai.myshopyglam.com/",
+      features: [
+        "Auto Lead Filtering - Identify and prioritize high-value prospects",
+        "Smart Customer Engagement - Personalized AI responses",
+        "Qualification & Routing - Properly qualify leads before handoff",
+        "Multi-Product Matchmaking - Match customers with right products",
+        "Conversion Focused Replies - Move prospects through sales funnel"
+      ],
+    }
   ];
 
   const education = [
