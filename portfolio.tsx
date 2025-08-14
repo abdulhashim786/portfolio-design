@@ -165,7 +165,7 @@ export default function Portfolio() {
                 </span>
               </h1>
               <p className="text-xl text-gray-400 mb-8">
-                Angular developer with 2 years of experience in software analysis, design, and development using Angular and JavaScript.
+                Angular developer with 3 years of experience in software analysis, design, and development using Angular, Ionic, React, TypeScript, JavaScript, HTML, SCSS, Tailwind CSS, and Material UI.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button className="bg-blue-600 hover:bg-blue-700" onClick={() => document.getElementById('projects')?.scrollIntoView()}>
@@ -181,7 +181,7 @@ export default function Portfolio() {
               <a href="https://github.com/abdulhashim786" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/abdul-hashim-104286219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={24} />
               </a>
               <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
@@ -202,12 +202,10 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <p className="text-gray-300 mb-6">
-                  I'm an Angular developer with 2 years of experience in software analysis, design, and development using Angular and JavaScript. 
-                  Skilled in delivering high-quality solutions under tight timelines, experienced in Agile, Git, and Bitbucket.
+                 I am an Angular Developer with over three years of professional experience in software analysis, design, and development, specializing in Angular, Ionic, and front-end technologies. My expertise includes building scalable, responsive, and user-friendly web and mobile applications using Angular, TypeScript, HTML, CSS, Tailwind, and Material UI, along with backend knowledge in Node.js, Express, and MongoDB. I have worked extensively with RESTful API integrations, third-party services, and secure payment gateways, ensuring seamless functionality and performance optimization. I am well-versed in Agile methodologies, Git, and Bitbucket, with a strong focus on delivering high-quality, maintainable code through peer code reviews and collaboration with cross-functional teams.
                 </p>
                 <p className="text-gray-300 mb-6">
-                  I have strong problem-solving, communication, and collaboration skills. My expertise includes working with 
-                  Angular, Ionic, TypeScript, and various frontend technologies to build responsive and user-friendly applications.
+                 Currently working at Brainbots Digital PVT LTD on the Shopyglam project, I have been responsible for client communication, feature design in coordination with the architect, creating project flows, and developing complex interfaces for e-commerce and social commerce platforms. My role involves mapping business requirements into technical solutions, implementing dynamic and reactive pages, integrating API-driven functionalities, and ensuring application performance across devices. I also have experience mentoring interns, improving development efficiency, and contributing to innovative product features that enhance user engagement and business growth.
                 </p>
                 <Button variant="outline" className="border-gray-700 hover:bg-gray-800">
                   Download CV

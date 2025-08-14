@@ -286,9 +286,7 @@ export default function PortfolioV2() {
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                  Angular developer with 2 years of experience in software
-                  analysis, design, and development using Angular and
-                  JavaScript.
+                 Angular developer with 3 years of experience in software analysis, design, and development using Angular, Ionic, React, TypeScript, JavaScript, HTML, SCSS, Tailwind CSS, and Material UI.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button
@@ -366,32 +364,26 @@ export default function PortfolioV2() {
                 About me
               </Badge>
               <h2 className="text-3xl font-bold mb-4">Get to know me better</h2>
-              <p className="text-gray-600 dark:text-gray-300">
+              {/* <p className="text-gray-600 dark:text-gray-300">
                 I'm an Angular developer with experience in delivering
                 high-quality solutions under tight timelines.
-              </p>
+              </p> */}
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-semibold mb-4">My story</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  I'm an Angular developer with 2 years of experience in
-                  software analysis, design, and development using Angular and
-                  JavaScript. Skilled in delivering high-quality solutions under
-                  tight timelines, experienced in Agile, Git, and Bitbucket.
+                   <p className="text-gray-300 mb-6">
+                 I am an Angular Developer with over three years of professional experience in software analysis, design, and development, specializing in Angular, Ionic, and front-end technologies. My expertise includes building scalable, responsive, and user-friendly web and mobile applications using Angular, TypeScript, HTML, CSS, Tailwind, and Material UI, along with backend knowledge in Node.js, Express, and MongoDB. I have worked extensively with RESTful API integrations, third-party services, and secure payment gateways, ensuring seamless functionality and performance optimization. I am well-versed in Agile methodologies, Git, and Bitbucket, with a strong focus on delivering high-quality, maintainable code through peer code reviews and collaboration with cross-functional teams.
                 </p>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  I have strong problem-solving, communication, and
-                  collaboration skills. My expertise includes working with
-                  Angular, Ionic, TypeScript, and various frontend technologies
-                  to build responsive and user-friendly applications.
+                <p className="text-gray-300 mb-6">
+                 Currently working at Brainbots Digital PVT LTD on the Shopyglam project, I have been responsible for client communication, feature design in coordination with the architect, creating project flows, and developing complex interfaces for e-commerce and social commerce platforms. My role involves mapping business requirements into technical solutions, implementing dynamic and reactive pages, integrating API-driven functionalities, and ensuring application performance across devices. I also have experience mentoring interns, improving development efficiency, and contributing to innovative product features that enhance user engagement and business growth.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
                     <div className="text-3xl font-bold text-teal-500 dark:text-teal-400 mb-1">
-                      2+
+                      3
                     </div>
                     <div className="text-gray-600 dark:text-gray-300">
                       Years of experience
@@ -399,7 +391,7 @@ export default function PortfolioV2() {
                   </div>
                   <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
                     <div className="text-3xl font-bold text-indigo-500 dark:text-indigo-400 mb-1">
-                      2+
+                      3+
                     </div>
                     <div className="text-gray-600 dark:text-gray-300">
                       Major projects
