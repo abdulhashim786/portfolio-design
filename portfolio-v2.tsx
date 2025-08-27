@@ -138,7 +138,7 @@ export default function PortfolioV2() {
       ],
       image: "/image.png?height=200&width=350",
       github: "https://github.com/abdulhashim786",
-      demo: "https://ai.myshopyglam.com/",
+      demo: "https://thenexchat.com/",
       features: [
         "Auto Lead Filtering - Identify and prioritize high-value prospects",
         "Smart Customer Engagement - Personalized AI responses",

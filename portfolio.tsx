@@ -335,7 +335,7 @@ export default function Portfolio() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Mail className="text-blue-400" />
-                    <span>abdulhashimchoudhary@gmail.com</span>
+                    <span>abdulhashimchoudhary67@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Github className="text-blue-400" />
