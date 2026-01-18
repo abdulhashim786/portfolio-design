@@ -1,10 +1,10 @@
 "use client"
-import PortfolioV2 from "../portfolio-v2"
+import Portfolio from "../portfolio"
 
 export default function Page() {
   return (
     <>
-      <PortfolioV2 />
+      <Portfolio />
     </>
   )
 }
