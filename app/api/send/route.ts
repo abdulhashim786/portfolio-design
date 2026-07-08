@@ -13,6 +13,15 @@ export async function POST(req: Request) {
       );
     }
 
+    // Validate SMTP credentials
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASSWORD) {
+      console.error('Error sending email: EMAIL_USER or EMAIL_PASSWORD environment variables are missing.');
+      return NextResponse.json(
+        { message: 'Email sending is not configured. Please check your environment variables.' },
+        { status: 500 }
+      );
+    }
+
     // Create a transporter
     const transporter = nodemailer.createTransport({
       service: 'gmail',

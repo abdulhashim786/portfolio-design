@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import {
   Code,
   User,
@@ -41,6 +42,7 @@ export default function Portfolio() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<null | "success" | "error">(null);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -53,24 +55,46 @@ export default function Portfolio() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
+    setErrorMessage("");
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      const missing = [];
+      if (!serviceId) missing.push("NEXT_PUBLIC_EMAILJS_SERVICE_ID");
+      if (!templateId) missing.push("NEXT_PUBLIC_EMAILJS_TEMPLATE_ID");
+      if (!publicKey) missing.push("NEXT_PUBLIC_EMAILJS_PUBLIC_KEY");
+      setErrorMessage(`Email service misconfigured. Missing environment variables: ${missing.join(", ")}. Please configure them in your .env.local file.`);
+      setSubmitStatus("error");
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
-      const response = await fetch("/api/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
         },
-        body: JSON.stringify(formData),
-      });
+        publicKey
+      );
 
-      if (response.ok) {
+      if (result.status === 200) {
         setSubmitStatus("success");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
+        setErrorMessage("Failed to send message: Received non-200 status from EmailJS.");
         setSubmitStatus("error");
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error("Error submitting form via EmailJS:", error);
+      setErrorMessage("Failed to send message. Please check network connection or try again later.");
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -768,8 +792,8 @@ export default function Portfolio() {
 
                       {submitStatus === "error" && (
                         <div className="p-4 rounded-md bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center gap-3">
-                          <AlertCircle size={20} />
-                          <span>Failed to send message. Please try again later.</span>
+                          <AlertCircle size={20} className="flex-shrink-0" />
+                          <span>{errorMessage || "Failed to send message. Please try again later."}</span>
                         </div>
                       )}
                     </form>
