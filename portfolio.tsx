@@ -134,112 +134,149 @@ export default function Portfolio() {
   const navItems = [
     { id: "home", label: "Home", icon: <Code size={18} /> },
     { id: "about", label: "About me", icon: <User size={18} /> },
-    { id: "projects", label: "Projects", icon: <Briefcase size={18} /> },
+    { id: "experience", label: "Work Experience", icon: <Briefcase size={18} /> },
+    { id: "skills", label: "Skills", icon: <Code size={18} /> },
     { id: "education", label: "Education", icon: <GraduationCap size={18} /> },
     { id: "contact", label: "Contact", icon: <Mail size={18} /> },
   ];
 
-  const skills = [
+  const skillCategories = [
     {
       category: "Frontend",
       items: [
-        "Angular",
+        "Angular (v15+ / Signals)",
         "Ionic",
         "TypeScript",
-        "JavaScript",
+        "JavaScript (ES6+)",
         "HTML5",
-        "CSS/SCSS",
+        "CSS3 / SCSS",
+        "Angular Material",
+        "RxJS",
+        "NgRx",
+        "Tailwind CSS",
+        "Bootstrap",
         "React",
         "Next.js",
-        "Tailwind CSS",
-        "Angular Material",
+        "WebSocket",
+        "SSR",
       ],
     },
     {
       category: "Backend",
-      items: ["Node.js", "Express", "MongoDB", "Java"],
+      items: ["Node.js", "Express.js", "MongoDB"],
     },
     {
-      category: "Tools",
+      category: "State Management & Performance",
+      items: ["RxJS", "Signals", "Lazy Loading", "Reactive Forms", "NgRx"],
+    },
+    {
+      category: "Tools & Others",
       items: [
         "Git",
         "Bitbucket",
-        "VS Code",
         "Jira",
         "Postman",
-        "Agile Methodology",
+        "Agile/Scrum",
+        "VS Code",
       ],
+    },
+    {
+      category: "Languages",
+      items: ["English", "Hindi", "Urdu"],
     },
   ];
 
-  const projects = [
+  const experiences = [
     {
-      title: "Shopyglam (Angular)",
-      description:
-        "A social e-commerce platform connecting sellers and influencers for seamless online marketing on social media like WhatsApp. Offers shop setup, secure transactions, and fashion product access.",
-      technologies: [
-        "Angular",
-        "Ionic",
-        "TypeScript",
-        "Angular Material",
-        "SCSS",
-      ],
-      image: "/unnamed.webp?height=100&width=350",
-      github: "https://github.com/abdulhashim786",
-      demo: "https://myshopyglam.com/",
-    },
-    {
-      title: "Shopyglam (Next.js)",
-      description:
-        "The same social e-commerce platform rebuilt with Next.js for improved performance and SEO.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Ionic"],
-      image: "/unnamed (1).webp?height=100&width=350",
-      github: "https://github.com/abdulhashim786",
-      demo: "https://myshopyglam.com/",
-    },
-    {
-      title: "WhatsApp Sales Agent",
-      description:
-        "AI-powered WhatsApp solution that automates replies, qualifies leads, and closes sales. Transforms WhatsApp Business into a complete sales machine with features like auto lead filtering, smart engagement, and real-time agent routing.",
-      technologies: [
-        "Node.js",
-        "WhatsApp Business API",
-        "AI/NLP",
-        "Angular",
-        "MongoDB"
-      ],
-      image: "/image.png?height=200&width=350",
-      github: "https://github.com/abdulhashim786",
+      role: "Frontend Developer",
+      company: "Brainbots Digital PVT LTD.",
+      period: "01/2025 – Present | Mumbai",
+      project: "NexChat – AI Conversational CRM Platform",
       demo: "https://thenexchat.com/",
-      features: [
-        "Auto Lead Filtering - Identify and prioritize high-value prospects",
-        "Smart Customer Engagement - Personalized AI responses",
-        "Qualification & Routing - Properly qualify leads before handoff",
-        "Multi-Product Matchmaking - Match customers with right products",
-        "Conversion Focused Replies - Move prospects through sales funnel"
+      github: "https://github.com/abdulhashim786",
+      image: "/image.png?height=200&width=350",
+      environment: ["Angular", "TypeScript", "HTML", "Material", "Signals", "RxJS"],
+      description:
+        "Developed an AI-powered omnichannel CRM platform that helps businesses automate customer conversations across WhatsApp and Instagram. The platform captures, qualifies, and manages leads, automates follow-ups, and enables sales teams to track and convert leads through a centralized dashboard.",
+      responsibilities: [
+        "Developed responsive and reusable UI components using Angular, TypeScript, SCSS, and Angular Material, improving development speed and consistency across the platform.",
+        "Built real-time chat, unified inbox, and CRM dashboards for WhatsApp & Instagram, enabling sales teams to manage multi-channel conversations from a single interface.",
+        "Implemented Reactive Forms, RxJS operators, Signals, and lazy loading, resulting in smoother performance and reduced initial load time.",
+        "Developed AI chat templates, campaign, and automated follow-up modules that helped businesses qualify and convert leads more efficiently.",
+        "Collaborated in Agile (Scrum) environment using Git, Bitbucket, and Jira, contributing to consistent sprint deliveries.",
       ],
-    }
+      highlights: [
+        "Unified Multi-Channel Inbox (WhatsApp + Instagram)",
+        "Real-time WebSocket Chat & AI Qualification",
+        "Automated Follow-ups & Lead Management Dashboard",
+      ]
+    },
+    {
+      role: "Frontend Developer",
+      company: "Brainbots Digital PVT LTD.",
+      period: "10/2022 – 01/2025 | Mumbai",
+      project: "Shopyglam – Social E-commerce Platform",
+      demo: "https://myshopyglam.com/",
+      github: "https://github.com/abdulhashim786",
+      image: "/unnamed.webp?height=100&width=350",
+      environment: ["Angular", "Ionic", "TypeScript", "Signals", "RxJS", "React", "Next.js", "Tailwind CSS"],
+      description:
+        "Shopyglam is a social e-commerce platform that enables sellers and influencers to create online stores, manage product catalogs, process customer orders, and promote products through social media. The platform provides a seamless shopping experience across web and mobile applications with secure authentication, payment integration, and responsive user interfaces.",
+      responsibilities: [
+        "Developed responsive web & mobile applications using Angular, Ionic, and TypeScript, implementing routing, lazy loading, Reactive Forms, form validation, and RxJS to improve application performance.",
+        "Built core modules (Shop Setup, Product Catalog, Orders, Influencer Dashboard) with reusable components & Tailwind CSS.",
+        "Integrated REST APIs for auth, payments, products & image uploads.",
+        "Contributed to migration from Angular + Ionic to React + Next.js.",
+      ],
+      highlights: [
+        "Cross-platform Web & Ionic Mobile Applications",
+        "Shop Setup, Product Catalog & Influencer Dashboards",
+        "Secure Payment Gateways & REST API Integration",
+      ]
+    },
+    {
+      role: "Full Stack Developer (Project)",
+      company: "Personal / Academic Project",
+      period: "02/2022 – 2022 | Mumbai",
+      project: "Furniture Shop E-commerce Application",
+      demo: "#",
+      github: "https://github.com/abdulhashim786",
+      image: "/placeholder.svg?height=200&width=350",
+      environment: ["Node.js", "Express.js", "MongoDB", "REST APIs", "HTML Parser"],
+      description:
+        "Developed a Furniture Shop E-commerce application allowing users to browse furniture products, search items, manage shopping carts, and place orders. Implemented RESTful APIs for product and user management and used HTML Parser for product data extraction and processing.",
+      responsibilities: [
+        "Designed and implemented RESTful API endpoints for user authentication, product catalogs, and order placement.",
+        "Built interactive cart management, product filtering, and search engine functionality.",
+        "Integrated HTML Parser module for processing and extracting web data.",
+      ],
+      highlights: [
+        "RESTful API Architecture for Products & User Auth",
+        "Cart Management & Checkout Pipeline",
+        "HTML Parsing & Product Data Processing",
+      ]
+    },
   ];
 
   const education = [
     {
       period: "2022",
-      title: "Bachelor of Science in Information Technology",
+      title: "BSC IT (Bachelor of Science in Information Technology)",
       institution: "Shailendra Education Society, Mumbai University",
       description:
-        "Completed degree in Information Technology with focus on web development and programming.",
+        "Graduated with a degree in Information Technology.",
     },
     {
-      period: "2019",
-      title: "Higher Secondary Certificate (HSC)",
-      institution: "Maharashtra State Board of Mumbai (Commerce)",
-      description: "Completed higher secondary education in Commerce stream.",
-    },
-    {
-      period: "2017",
-      title: "Secondary School Certificate (SSC)",
+      period: "02/2019",
+      title: "HSC (Commerce)",
       institution: "Maharashtra State Board of Mumbai",
-      description: "Completed secondary school education.",
+      description: "Higher Secondary Certificate in Commerce.",
+    },
+    {
+      period: "03/2017",
+      title: "SSC",
+      institution: "Maharashtra State Board of Mumbai",
+      description: "Secondary School Certificate.",
     },
   ];
 
@@ -345,10 +382,10 @@ export default function Portfolio() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
-                className="order-2 md:order-1"
+                className="order-2 md:order-1 relative z-20"
               >
                 <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-                  Angular Developer
+                  Frontend Developer
                 </Badge>
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">
                   Hello, I'm{" "}
@@ -357,30 +394,39 @@ export default function Portfolio() {
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                  Angular developer with 3 years of experience in software analysis, design, and development using Angular, Ionic, React, TypeScript, JavaScript, HTML, SCSS, Tailwind CSS, and Material UI.
+                  Frontend Developer with 4 years of experience building scalable web and mobile applications using Angular, Ionic, TypeScript, and RxJS. Specialized in AI-powered CRM platforms and social e-commerce solutions.
                 </p>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-4 relative z-30">
                   <Button
                     className="cursor-pointer bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white border-0"
                     onClick={() =>
-                      document.getElementById("projects")?.scrollIntoView()
+                      document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })
                     }
                   >
-                    View projects <ArrowRight className="ml-2 h-4 w-4" />
+                    View Experience <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
-                  <Button
 
+                  <a href="/abdulhashim_resume.pdf" download="Abdul_Hashim_Resume.pdf">
+                    <Button
+                      variant="outline"
+                      className="cursor-pointer border-teal-500 text-teal-500 hover:bg-teal-500/10 dark:border-teal-400 dark:text-teal-400 dark:hover:bg-teal-400/10"
+                    >
+                      Download CV
+                    </Button>
+                  </a>
+
+                  <Button
                     variant="outline"
                     className="cursor-pointer border-gray-300 dark:border-gray-700"
                     onClick={() =>
-                      document.getElementById("contact")?.scrollIntoView()
+                      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
                     }
                   >
                     Contact Me
                   </Button>
                 </div>
 
-                <div className="mt-12 flex gap-4">
+                <div className="mt-12 flex gap-4 relative z-30">
                   <a
                     href="https://github.com/abdulhashim786"
                     target="_blank"
@@ -390,7 +436,7 @@ export default function Portfolio() {
                     <Github size={20} />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/abdul-hashim-104286219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    href="https://www.linkedin.com/in/abdul-hashim-104286219"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
@@ -413,14 +459,13 @@ export default function Portfolio() {
                 className="order-1 md:order-2 flex justify-center"
               >
                 <div className="relative">
-                  <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-teal-500 to-indigo-500 blur-3xl opacity-20 absolute -inset-4"></div>
+                  <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-teal-500 to-indigo-500 blur-3xl opacity-20 absolute -inset-4 pointer-events-none"></div>
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-gray-200 dark:border-gray-800 overflow-hidden relative z-10">
                     <img
                       src="/Gemini_Generated_Image_7oz2zq7oz2zq7oz21.png?height=400&width=400"
                       alt="Abdul Hashim"
                       className="w-full h-full object-cover"
                     />
-                    {/* src="/placeholder.svg?height=400&width=400" */}
                   </div>
                 </div>
               </motion.div>
@@ -436,94 +481,59 @@ export default function Portfolio() {
                 About me
               </Badge>
               <h2 className="text-3xl font-bold mb-4">Get to know me better</h2>
-              {/* <p className="text-gray-600 dark:text-gray-300">
-                I'm an Angular developer with experience in delivering
-                high-quality solutions under tight timelines.
-              </p> */}
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-2xl font-semibold mb-4">My story</h3>
-                <p className="text-gray-300 mb-6">
-                  I am an Angular Developer with over three years of professional experience in software analysis, design, and development, specializing in Angular, Ionic, and front-end technologies. My expertise includes building scalable, responsive, and user-friendly web and mobile applications using Angular, TypeScript, HTML, CSS, Tailwind, and Material UI, along with backend knowledge in Node.js, Express, and MongoDB. I have worked extensively with RESTful API integrations, third-party services, and secure payment gateways, ensuring seamless functionality and performance optimization. I am well-versed in Agile methodologies, Git, and Bitbucket, with a strong focus on delivering high-quality, maintainable code through peer code reviews and collaboration with cross-functional teams.
-                </p>
-                <p className="text-gray-300 mb-6">
-                  Currently working at Brainbots Digital PVT LTD on the Shopyglam project, I have been responsible for client communication, feature design in coordination with the architect, creating project flows, and developing complex interfaces for e-commerce and social commerce platforms. My role involves mapping business requirements into technical solutions, implementing dynamic and reactive pages, integrating API-driven functionalities, and ensuring application performance across devices. I also have experience mentoring interns, improving development efficiency, and contributing to innovative product features that enhance user engagement and business growth.
-                </p>
+            <div className="max-w-4xl mx-auto">
+              <h3 className="text-2xl font-semibold mb-4">Professional Summary</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                Frontend Developer with 4 years of experience building scalable web and mobile applications using Angular, Ionic, TypeScript, and RxJS. Specialized in AI-powered CRM platforms and social e-commerce solutions. Strong in creating reusable component libraries, integrating REST APIs, and delivering responsive, high-performance UIs in Agile environments. Hands-on with React and full-stack fundamentals (Node.js, Express, MongoDB).
+              </p>
 
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
-                    <div className="text-3xl font-bold text-teal-500 dark:text-teal-400 mb-1">
-                      3
-                    </div>
-                    <div className="text-gray-600 dark:text-gray-300">
-                      Years of experience
-                    </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8">
+                <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
+                  <div className="text-3xl font-bold text-teal-500 dark:text-teal-400 mb-1">
+                    4 Years
                   </div>
-                  <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
-                    <div className="text-3xl font-bold text-indigo-500 dark:text-indigo-400 mb-1">
-                      3+
-                    </div>
-                    <div className="text-gray-600 dark:text-gray-300">
-                      Major projects
-                    </div>
+                  <div className="text-gray-600 dark:text-gray-300">
+                    Frontend Experience
                   </div>
                 </div>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-semibold mb-6">My Skills</h3>
-                <Tabs defaultValue="Frontend" className="w-full">
-                  <TabsList className="grid grid-cols-3 mb-6">
-                    {skills.map((skill) => (
-                      <TabsTrigger key={skill.category} value={skill.category}>
-                        {skill.category}
-                      </TabsTrigger>
-                    ))}
-                  </TabsList>
-
-                  {skills.map((skill) => (
-                    <TabsContent
-                      key={skill.category}
-                      value={skill.category}
-                      className="mt-0"
-                    >
-                      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                        {skill.items.map((item) => (
-                          <div
-                            key={item}
-                            className="p-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center gap-2"
-                          >
-                            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-teal-500 to-indigo-500"></div>
-                            <span>{item}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </TabsContent>
-                  ))}
-                </Tabs>
+                <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
+                  <div className="text-3xl font-bold text-indigo-500 dark:text-indigo-400 mb-1">
+                    4+
+                  </div>
+                  <div className="text-gray-600 dark:text-gray-300">
+                    Production Platforms
+                  </div>
+                </div>
+                <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
+                  <div className="text-3xl font-bold text-blue-500 dark:text-blue-400 mb-1">
+                    Mumbai
+                  </div>
+                  <div className="text-gray-600 dark:text-gray-300">
+                    Location (India)
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Projects Section */}
-        <section id="projects" className="py-20">
+        {/* Work Experience Section */}
+        <section id="experience" className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-                Projects
+                Work Experience
               </Badge>
-              <h2 className="text-3xl font-bold mb-4">My recent work</h2>
+              <h2 className="text-3xl font-bold mb-4">Professional Work Experience</h2>
               <p className="text-gray-600 dark:text-gray-300">
-                Here's a selection of projects I've worked on at Brainbots
-                Digital PVT LTD.
+                Detailed history of my engineering contributions, project impact, and key responsibilities.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
+            <div className="max-w-4xl mx-auto space-y-12">
+              {experiences.map((exp, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -531,44 +541,80 @@ export default function Portfolio() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="overflow-hidden h-full bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
-                    <div className="relative">
-                      <img
-                        src={project.image || "/placeholder.svg"}
-                        alt={project.title}
-                        className="w-full h-48 object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end justify-between p-4">
-                        <div className="flex gap-3">
-                          <a
-                            href={project.github}
-                            className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
-                          >
-                            <Github size={18} className="text-white" />
-                          </a>
-                          <a
-                            href={project.demo}
-                            className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
-                          >
-                            <ExternalLink size={18} className="text-white" />
-                          </a>
+                  <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <CardContent className="p-6 md:p-8">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-2">
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">{exp.role}</h3>
+                          <p className="text-lg font-medium text-teal-600 dark:text-teal-400">{exp.company}</p>
+                        </div>
+                        <Badge variant="outline" className="w-fit border-indigo-500/30 text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/30 px-3 py-1 text-xs">
+                          {exp.period}
+                        </Badge>
+                      </div>
+
+                      <div className="flex flex-wrap items-center justify-between gap-3 mb-6 p-4 rounded-xl bg-gray-50 dark:bg-gray-900/60 border border-gray-100 dark:border-gray-700/50">
+                        <div>
+                          <span className="text-xs uppercase font-semibold tracking-wider text-gray-500 dark:text-gray-400 block mb-1">Project Name</span>
+                          <span className="text-base font-bold text-gray-900 dark:text-gray-100">{exp.project}</span>
+                        </div>
+                        <div className="flex gap-2">
+                          {exp.github && (
+                            <a
+                              href={exp.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-3 py-1.5 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-teal-500 hover:text-white dark:hover:bg-teal-500 transition-colors text-xs font-medium flex items-center gap-1.5"
+                            >
+                              <Github size={14} /> Code
+                            </a>
+                          )}
+                          {exp.demo && exp.demo !== "#" && (
+                            <a
+                              href={exp.demo}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-3 py-1.5 rounded-lg bg-teal-500 text-white hover:bg-teal-600 transition-colors text-xs font-medium flex items-center gap-1.5"
+                            >
+                              <ExternalLink size={14} /> Live Demo
+                            </a>
+                          )}
                         </div>
                       </div>
-                    </div>
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-semibold mb-2">
-                        {project.title}
-                      </h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-4">
-                        {project.description}
+
+                      <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        {exp.description}
                       </p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech) => (
-                          <Badge
-                            key={tech}
-                            variant="outline"
-                            className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-0"
-                          >
+
+                      {exp.highlights && (
+                        <div className="mb-6">
+                          <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3 text-sm">Key Product Highlights:</h4>
+                          <div className="grid sm:grid-cols-3 gap-2">
+                            {exp.highlights.map((h, hIdx) => (
+                              <div key={hIdx} className="p-3 rounded-lg bg-teal-50/50 dark:bg-teal-950/20 border border-teal-100 dark:border-teal-900/30 text-xs text-teal-800 dark:text-teal-300 font-medium">
+                                ✓ {h}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="mb-6">
+                        <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3 text-sm">Roles & Responsibilities:</h4>
+                        <ul className="space-y-2">
+                          {exp.responsibilities.map((resp, i) => (
+                            <li key={i} className="flex gap-3 text-gray-600 dark:text-gray-300 text-sm">
+                              <span className="text-teal-500 dark:text-teal-400 mt-0.5">•</span>
+                              <span>{resp}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="pt-4 border-t border-gray-100 dark:border-gray-700/60 flex flex-wrap items-center gap-2">
+                        <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 mr-2">Environment & Tools:</span>
+                        {exp.environment.map((tech) => (
+                          <Badge key={tech} className="bg-gray-100 dark:bg-gray-700/80 text-gray-800 dark:text-gray-200 border-0 text-xs font-normal">
                             {tech}
                           </Badge>
                         ))}
